@@ -9,34 +9,38 @@
     <title>Calculadora</title>
 </head>
 <body>
-    <table>
-        <tr>
-            <td colspan="6"><input type="text" id="display" value="0" disabled></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="7" onclick=""/></td>
-            <td><input type="button" value="8" onclick=""/></td>
-            <td><input type="button" value="9" onclick=""/></td>
-            <td><input type="button" value="+" onclick=""/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="4" onclick=""/></td>
-            <td><input type="button" value="5" onclick=""/></td>
-            <td><input type="button" value="6" onclick=""/></td>
-            <td><input type="button" value="-" onclick=""/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="1" onclick=""/></td>
-            <td><input type="button" value="2" onclick=""/></td>
-            <td><input type="button" value="3" onclick=""/></td>
-            <td><input type="button" value="+" onclick=""/></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="C" onclick=""/></td>
-            <td><input type="button" value="0" onclick=""/></td>
-            <td><input type="button" value="=" onclick=""/></td>
-            <td><input type="button" value="/" onclick=""/></td>
-        </tr>
-    </table>
+    <h1>Calculadora | Simples</h1>
+    <h2>L.R.</h2>
+    <div class="container">
+        <table class="calculator">
+            <tr>
+                <td colspan="6"><input type="text" id="display" value="0" disabled></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="8" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="9" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="+" onclick="attOp(this)"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="5" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="6" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="-" onclick="attOp(this)"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="2" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="3" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="*" onclick="attOp(this)"/></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="cleanDisplay()"/></td>
+                <td><input type="button" value="0" onclick="attDisplay(this)"/></td>
+                <td><input type="button" value="=" onclick="calc()"/></td>
+                <td><input type="button" value="/" onclick="attOp(this)"/></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
